@@ -1,7 +1,8 @@
 public class Main{
     public static void main(String[] args) {
-        String name = "Wabwire";
-        name="Braison";
-        System.out.println("Hello "+name+",Welcome to Java Programming!");
+        String Lname = "Wabwire";
+       String Fname="Braison";
+       String FullName= Fname+ " "+ Lname;
+        System.out.println("Hello "+FullName+",Welcome to Java Programming!");
     }
 }
