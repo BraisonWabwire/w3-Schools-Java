@@ -1,11 +1,9 @@
-// Java Break and conntinue Statements
+// Java arrays
 public class Main {
     public static void main(String[] args) {
-        for(int i=0; i<10; i ++){
-            if(i == 4){
-                continue; // it will skip printing when i is 4
-            }
-            System.out.println(i);
-        }
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        cars[0] = "Opel";
+        System.out.println(cars[0]);
+        System.out.println(cars.length);
     }
 }
