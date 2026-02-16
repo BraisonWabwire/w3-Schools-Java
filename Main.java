@@ -1,9 +1,11 @@
-// Java nested loops
+// Java Break and conntinue Statements
 public class Main {
     public static void main(String[] args) {
-        String[] cars= {"Volvo", "BMW", "Ford"}; 
-        for (String car : cars) {
-            System.out.println(car);
+        for(int i=0; i<10; i ++){
+            if(i == 4){
+                break; // it will break the loop when i is 4
+            }
+            System.out.println(i);
         }
     }
 }
