@@ -1,9 +1,17 @@
 // The else if condition in Java
 public class Main {
     public static void main(String[] args){
-        // Short hand if else statement
-        int time = 20;
-        String result = (time < 18) ? "Good day.":"Good evening";
-        System.out.println(result);
+        // Nested if else statement in Java
+        var number = 3;
+        var result = 20;
+        if (number > 5){
+            if (result > 15){
+                System.out.println("Both meet minimum requirements");
+            }
+        }
+        else{
+            System.out.println("One or both do not meet minimum requirements");
+        }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    //    
     }
 }
