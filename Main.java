@@ -6,8 +6,9 @@ public class Main {
         cars[1] = "BMW";
         cars[2] = "Ford";
         cars[3] = "Mazda";
-        for (String car : cars) {
-            System.out.println(car);
-        }
+    //    Looping through na array
+    for (int i=0; i<cars.length; i++){
+        System.out.println(cars[i]);
+    }
     }
 }
