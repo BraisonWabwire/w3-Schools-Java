@@ -1,13 +1,16 @@
 // Java Methods: Parameters and Arguments
 public class Main {
 
-     public static void myMethod(String fname, int age){
-        System.out.println("I just got executed by " + fname + " who is " + age + " years old!");
+     public static void myMethod(int age){
+        if(age < 18){
+            System.out.println("You are a minor.");
+        } else {
+            System.out.println("You are an adult.");
+        }
      }
 
      public static void main (String[] args){
-        myMethod("Braison", 22);
-        myMethod("Wabwire", 25);
-        myMethod("Daniel", 30);
+        myMethod(15); 
+        myMethod(25); 
      }
 }
