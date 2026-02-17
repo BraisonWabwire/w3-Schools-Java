@@ -1,10 +1,14 @@
-// Modify java attributes
 public class Main{
-      final int x=25;
+      public void fullThrottle(){
+          System.out.println("The car is going as fast as it can!");
+      }
+      public void speed(int maxSpeed){
+          System.out.println("Max speed is: " + maxSpeed);
+      }
      public static void main(String[] args){
          Main obj = new Main();
-     //     obj.x =10;
-         System.out.println(obj.x);
+          obj.fullThrottle();
+          obj.speed(200);
      
 }
 }
