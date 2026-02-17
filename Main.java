@@ -1,9 +1,9 @@
 // Modify java attributes
 public class Main{
-      int x;
+      final int x=25;
      public static void main(String[] args){
          Main obj = new Main();
-         obj.x =25;
+     //     obj.x =10;
          System.out.println(obj.x);
      
 }
