@@ -1,19 +1,23 @@
-// Public and private access modifiers in Java
 public class Main {
-     static class Person{
-          String name = "Braison";
-          int age = 22;
 
-          void displayInfo() {
-               System.out.println("Name: " + name);
-               System.out.println("Age: " + age);
+      public static class Person{
+          private String name;
+
+          // Getter
+          public String getName(){
+                 return name;
           }
 
-     }
+          // Setter
+          public void setName(String newName){
+               this.name = newName;
+          }
+      }
 
-     public static void main(String[] args) {
 
-          Person person1 = new Person(); // create object
-          person1.displayInfo();
-     }
+      public static void main(String[] args){
+          Person myObj = new Person();
+          myObj.setName("Braison");
+          System.out.println(myObj.getName());
+      }
 }
