@@ -1,24 +1,19 @@
-// Constructor methods in java
+// Public and private access modifiers in Java
 public class Main {
+     static class Person{
+          String name = "Braison";
+          int age = 22;
 
-     String name;
-     String email;
-     int age;
+          void displayInfo() {
+               System.out.println("Name: " + name);
+               System.out.println("Age: " + age);
+          }
 
-
-     // Constructor method
-     public Main(String name, String email, int age){
-          this.name = name;
-          this.email = email;
-          this.age = age;
      }
 
-     public static void main(String[] args){
+     public static void main(String[] args) {
 
-          Main obj = new Main("Braison", "braison@example.com", 25);
-          System.out.println(obj.name);
-          System.out.println(obj.email);
-          System.out.println(obj.age);
-
+          Person person1 = new Person(); // create object
+          person1.displayInfo();
      }
 }
